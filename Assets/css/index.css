@@ -1,0 +1,49 @@
+.jumbotron {
+    background-image: url("../Images/pokeball\ art.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-color: black;
+    padding-bottom: 125px;
+    color: aliceblue;
+    text-align: center;
+    
+}
+p {
+    margin-top: 200px;
+    margin-bottom: 1rem;
+    font-family:0;
+}
+
+.lead {
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin-top: 210px;
+
+}
+
+header, main, footer {
+    padding-left: 300px;
+  }
+
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }
+      
+  .child-img {
+    margin-top: -303px;
+    margin-left: -263px;
+    position: absolute;
+    height: 146px;
+    width: 118px;
+}
+    .child2-img {
+      margin-top: -276px;
+      margin-left: 138px;
+      position: absolute;
+      height: 114px;
+      width: 100px;
+  }
