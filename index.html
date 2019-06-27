@@ -2,120 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Search Band Shows</title>
-    
-
-    <!-- FOR MATERIALIZE CSS: -->
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
-    <!-- FOR PERSONAL CSS: -->
-    <!-- Not minified CSS -->
-    <link rel="stylesheet" href="assets/css/index.css">img
-  
-    
-</head>
 
 <body>
-    <!-- ~~~~~~~~~~~~TODO: Make a navbar~~~~~~~~~~~~~~ -->
+  <!-- Nav bar -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../PoGo-Weather/Assets/css/index.css">
+
+  <title>Pokemon API</title>
+  </head>
+  <nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pokemon type</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Weather</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Jumbo Tron -->
+
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, Pokemon World</h1>
+      <p class="lead">On this site you will find the best pokemon to use for weather boosts!.</p>
+      <hr class="my-4">
+      <p>Selecting below will enable you to search the weather for your pokemon</p>
+      <a class="btn btn-primary btn-lg" href="https://fontmeme.com/pokemon-font/" role="button"><img
+          src="https://fontmeme.com/permalink/190627/0e2d6140a93db2d859cb4b62cce3b132.png" alt="pokemon-font"
+          border="0"></a>
+
+      <div class="parent-img">
+        <img src="Assets/Images/pikachu with umbrella copy.png" class="child-img" />
+
+      </div>
+      <img src="Assets/Images/squirtle2.png" class="child2-img" />
+    </div>
+
+   
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+      <script text="text/javascript">
+    //    <!-- ~~~~~~~~~~~~TODO: Make a navbar~~~~~~~~~~~~~~ -->
     
-    <!-- ~~~~~~~~~~END TODO: Make a navbar~~~~~~~~~~~~ -->
+    // <!-- ~~~~~~~~~~END TODO: Make a navbar~~~~~~~~~~~~ -->
 
-    <!-- ~~~~~~~~~~~~TODO: Make a searchbar~~~~~~~~~~~~~~ -->
-    <!-- 1. Add Apixu API 
-            2. Search Bar
-                a. Add search bar using Bootstrap
-                b. Modify search bar to search for location
-                c. Look up the location from Apixu API
-                    i. User input: zip code, city, latitude longitude (optional)
-                    ii. User input has to be a string
-        Search button to push the location AND the weather to the location/weather container as a div -->
-    <!-- ~~~~~~~~~~END TODO: Make a searchbar~~~~~~~~~~~~ -->
+    // <!-- ~~~~~~~~~~~~TODO: Make a searchbar~~~~~~~~~~~~~~ -->
+    // <!-- 1. Add Apixu API 
+    //         2. Search Bar
+    //             a. Add search bar using Bootstrap
+    //             b. Modify search bar to search for location
+    //             c. Look up the location from Apixu API
+    //                 i. User input: zip code, city, latitude longitude (optional)
+    //                 ii. User input has to be a string
+    //     Search button to push the location AND the weather to the location/weather container as a div -->
+    // <!-- ~~~~~~~~~~END TODO: Make a searchbar~~~~~~~~~~~~ -->
 
-    <!-- ~~~~~~~~~~~~TODO: Make a results container~~~~~~~~~~~~~~ -->
-    <!-- 3. Add Pokemon Go API
-            4. Location/Weather goes into an array
-                a. Show as a drop down menu (Bootstrap)
-                b. Under drop down menu, show a list of boosted Pokemon element.
-                    i. Match the weather API with the weather boosted Pokemon
-                        1) Find all the boosted Pokemon from the Pokemon Go API
-                        2) Switch to another html when user select the element
-                        3) List of boosted pokemon that have the chosen element -->
+    // <!-- ~~~~~~~~~~~~TODO: Make a results container~~~~~~~~~~~~~~ -->
+    // <!-- 3. Add Pokemon Go API
+    //         4. Location/Weather goes into an array
+    //             a. Show as a drop down menu (Bootstrap)
+    //             b. Under drop down menu, show a list of boosted Pokemon element.
+    //                 i. Match the weather API with the weather boosted Pokemon
+    //                     1) Find all the boosted Pokemon from the Pokemon Go API
+    //                     2) Switch to another html when user select the element
+    //                     3) List of boosted pokemon that have the chosen element -->
 
 
-    <!-- ~~~~~~~~~~END TODO: Make a results container~~~~~~~~~~~~ -->
+    // <!-- ~~~~~~~~~~END TODO: Make a results container~~~~~~~~~~~~ -->
+  </script>
 
-    <!-- FOR JQUERY: -->
-    <!-- add API here -->
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-    <!-- FOR MATERIALIZE CSS: -->
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
-    <!-- FOR PERSONAL JS: -->
-    <!-- Not minified JavaScript -->
-    <script src="assets/js/index.js"></script>
 </body>
 
-<head>
-        <body>
-    <!-- Nav bar -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../PoGo-Weather/Assets/css/index.css">
-
-    <title>Pokemon API</title>
-</head>
-<nav>
-        
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pokemon type</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Weather</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-
-  <!-- Jumbo Tron -->
-
-  <div class="jumbotron">
-    <h1 class="display-4">Hello, Pokemon World</h1>
-    <p class="lead">On this site you will find the best pokemon to use for weather boosts!.</p>
-    <hr class="my-4">
-    <p>Selecting below will enable you to search the weather for your pokemon</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Pokemon Weather!</a>
-    
-    <div class="parent-img">
-            <img src="Assets/Images/pikachu with umbrella copy.png" class="child-img"/>
-        
-        </div>
-        <img src="Assets/Images/squirtle.png" class="child2-img"/>
-  </div>
-
-    
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-</body>
 </html>
