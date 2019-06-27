@@ -3,7 +3,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: 70%;
     background-color: black;
     padding-bottom: 125px;
     color: aliceblue;
@@ -35,10 +35,10 @@ header, main, footer {
       
   .child-img {
     margin-top: -303px;
-    margin-left: -263px;
+    margin-left: -240px;
     position: absolute;
     height: 146px;
-    width: 118px;
+    width: 135px;
 }
     .child2-img {
       margin-top: -276px;
