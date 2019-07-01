@@ -10,6 +10,7 @@
     text-align: center;
     
 }
+
 p {
     margin-top: 200px;
     margin-bottom: 1rem;
@@ -27,23 +28,111 @@ header, main, footer {
     padding-left: 300px;
   }
 
-  @media only screen and (max-width : 992px) {
-    header, main, footer {
-      padding-left: 0;
-    }
-  }
       
   .child-img {
-    margin-top: -303px;
-    margin-left: -240px;
+    margin-top: -237px;
+    margin-left: -214px;
     position: absolute;
-    height: 146px;
-    width: 135px;
+    height: 162px;
+    width: 149px;
 }
-    .child2-img {
-      margin-top: -276px;
-      margin-left: 138px;
-      position: absolute;
-      height: 114px;
-      width: 100px;
-  }
+.child2-img {
+  margin-top: -204px;
+  margin-left: 134px;
+  position: absolute;
+  height: 131px;
+  width: 128px;
+}
+
+/* button, input {
+  overflow: visible;
+  height: 38px;
+  width: 80px;
+  
+}  */
+
+.bastard-button-search-form {
+  width: 350px;
+  margin: 0px auto;
+}
+
+.pokemon-go-button {
+  overflow: visible;
+  height: 38px;
+  width: 80px;
+}
+
+.pokemon-search {
+  width: calc(100% - 80px) !important;
+  margin-right: 0px !important;
+}
+
+
+/* phone settings */
+@media only screen 
+  and (max-device-width: 420px) {
+
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 40px;
+}
+
+.display-4 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.jumbotron {
+  height: 100vh;
+  background-image: url(../Images/pokeball\ art.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-color: black;
+  padding-bottom: 125px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.child2-img {
+  margin-top: -146px;
+  margin-left: 110px;
+  position: absolute;
+  height: 74px;
+  width: 66px;
+}
+
+p {
+  margin-top: 215px;
+  margin-bottom: 1rem;
+  font-family: 0;
+}
+
+.child-img {
+  margin-top: -158px;
+  margin-left: -171px;
+  position: absolute;
+  height: 90px;
+  width: 96px;
+}
+
+.badges {
+  margin-top: 100px;
+  vertical-align: middle;
+  border-style: none;
+  height: 103px;
+  width: 329px;
+  margin-top: 0px;
+}
+
+/* media query */
+
+
+}
+
+
+
+
