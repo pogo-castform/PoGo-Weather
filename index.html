@@ -10,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="../PoGo-Weather/Assets/css/index.css">
+  <link rel="stylesheet" href="Assets/css/index.css">
 
   <title>Pokemon API</title>
 </head>
@@ -50,33 +50,32 @@
     <div class="parent-img">
       <img src="Assets/Images/pikachu with umbrella copy.png" class="child-img" />
     </div>
-   
-    <div>
-    <img src="Assets/Images/squirtle2.png" class="child2-img" />
-  </div>
 
     <div>
-    <img src="Assets/Images/badges.png" class="badges"/>
-  </div>
-   
+      <img src="Assets/Images/squirtle2.png" class="child2-img" />
+    </div>
+       
+            <div class="constant-height">
+                <img id="effect" src="Assets/Images/badges.png" class="badges"/>
+              </div>
+
     <div class="button-search">
       <form class="form-inline bastard-button-search-form" method="GET" action="{% url 'search' %}">
         <input class="pokemon-search form-control mr-sm-2" name="query" type="text" placeholder="">
         <input class="pokemon-go-button" type="image" src="Assets/Images/pogo button.jpg" alt="Submit feedback">
       </form>
-  
+      <div id="weather-view">
+
+      </div>
     </div>
 
 
   </div>
-  <div class="whole-width">
-
-  </div>
 
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -84,34 +83,32 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  
+  <script src="Assets/javascript/jquery-ui.min.js"></script>
+  <script src="Assets/javascript/app.js"></script>
   <script text="text/javascript">
-    //    <!-- ~~~~~~~~~~~~TODO: Make a navbar~~~~~~~~~~~~~~ -->
+$( function() {
+    // run the currently selected effect
+    function runEffect() {
+      // Run the effect
+      $( "#effect" ).effect( "puff", {}, 500, callback );
+    };
+ 
+    // Callback function to bring a hidden box back
+    function callback() {
+      setTimeout(function() {
+        $( "#effect" ).removeAttr( "style" ).hide().fadeIn();
+      }, 1000 );
+    };
+ 
+    // Set effect from select menu value
+    $( ".pokemon-go-button" ).on( "click", function(event) {
+      event.preventDefault()
+      runEffect();
+    });
+  } );
+  
 
-    // <!-- ~~~~~~~~~~END TODO: Make a navbar~~~~~~~~~~~~ -->
-
-    // <!-- ~~~~~~~~~~~~TODO: Make a searchbar~~~~~~~~~~~~~~ -->
-    // <!-- 1. Add Apixu API 
-    //         2. Search Bar
-    //             a. Add search bar using Bootstrap
-    //             b. Modify search bar to search for location
-    //             c. Look up the location from Apixu API
-    //                 i. User input: zip code, city, latitude longitude (optional)
-    //                 ii. User input has to be a string
-    //     Search button to push the location AND the weather to the location/weather container as a div -->
-    // <!-- ~~~~~~~~~~END TODO: Make a searchbar~~~~~~~~~~~~ -->
-
-    // <!-- ~~~~~~~~~~~~TODO: Make a results container~~~~~~~~~~~~~~ -->
-    // <!-- 3. Add Pokemon Go API
-    //         4. Location/Weather goes into an array
-    //             a. Show as a drop down menu (Bootstrap)
-    //             b. Under drop down menu, show a list of boosted Pokemon element.
-    //                 i. Match the weather API with the weather boosted Pokemon
-    //                     1) Find all the boosted Pokemon from the Pokemon Go API
-    //                     2) Switch to another html when user select the element
-    //                     3) List of boosted pokemon that have the chosen element -->
-
-
-    // <!-- ~~~~~~~~~~END TODO: Make a results container~~~~~~~~~~~~ -->
   </script>
 
 </body>
