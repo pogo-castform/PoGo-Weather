@@ -54,6 +54,7 @@ header, main, footer {
 .bastard-button-search-form {
   width: 350px;
   margin: 0px auto;
+  margin-top: 50px;
 }
 
 .pokemon-go-button {
@@ -67,16 +68,21 @@ header, main, footer {
   margin-right: 0px !important;
 }
 
+.constant-height {
+  height: 105px;
+  width: 100%;
+  overflow: hidden;
+}
 
 /* phone settings */
 @media only screen 
   and (max-device-width: 420px) {
 
-  .lead {
-    font-size: 1.25rem;
-    font-weight: 300;
-    margin-top: 40px;
-}
+    .lead {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-top: 26px;
+  }
 
 .display-4 {
   font-size: 40px;
@@ -106,7 +112,7 @@ header, main, footer {
 }
 
 p {
-  margin-top: 215px;
+  margin-top: 146px;
   margin-bottom: 1rem;
   font-family: 0;
 }
@@ -126,6 +132,12 @@ p {
   height: 103px;
   width: 329px;
   margin-top: 0px;
+}
+
+.bastard-button-search-form {
+  width: 350px;
+  margin: 0px auto;
+  margin-top: -16px;
 }
 
 /* media query */
