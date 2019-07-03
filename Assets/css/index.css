@@ -12,10 +12,12 @@
 }
 
 p {
-    margin-top: 200px;
+    margin-top: 10px;
     margin-bottom: 1rem;
     font-family:0;
 }
+
+
 
 .lead {
         font-size: 1.25rem;
@@ -81,7 +83,8 @@ header, main, footer {
     .lead {
       font-size: 1.25rem;
       font-weight: 300;
-      margin-top: 26px;
+      margin-top: 60px;
+      margin-bottom :10px;
   }
 
 .display-4 {
@@ -112,7 +115,7 @@ header, main, footer {
 }
 
 p {
-  margin-top: 146px;
+  margin-top: 100px;
   margin-bottom: 1rem;
   font-family: 0;
 }
@@ -123,6 +126,7 @@ p {
   position: absolute;
   height: 90px;
   width: 96px;
+  
 }
 
 .badges {
