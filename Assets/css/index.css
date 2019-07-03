@@ -94,7 +94,7 @@ header, main, footer {
 }
 
 .jumbotron {
-  height: 100vh;
+  height: 100%;
   background-image: url(../Images/pokeball\ art.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -115,7 +115,7 @@ header, main, footer {
 }
 
 p {
-  margin-top: 100px;
+  margin-top: 10px;
   margin-bottom: 1rem;
   font-family: 0;
 }
