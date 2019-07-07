@@ -12,10 +12,12 @@
 }
 
 p {
-    margin-top: 200px;
+    margin-top: 10px;
     margin-bottom: 1rem;
     font-family:0;
 }
+
+
 
 .lead {
         font-size: 1.25rem;
@@ -54,6 +56,7 @@ header, main, footer {
 .bastard-button-search-form {
   width: 350px;
   margin: 0px auto;
+  margin-top: 50px;
 }
 
 .pokemon-go-button {
@@ -67,16 +70,45 @@ header, main, footer {
   margin-right: 0px !important;
 }
 
+.constant-height {
+  height: 105px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.collapsible {
+  background-color:rgb(59, 59, 59);
+  cursor: pointer;
+  padding: 18px;
+  width: 25%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  color: White;
+  border-radius: 10px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(59, 59, 59);  
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
 
 /* phone settings */
 @media only screen 
   and (max-device-width: 420px) {
 
-  .lead {
-    font-size: 1.25rem;
-    font-weight: 300;
-    margin-top: 40px;
-}
+    .lead {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-top: 60px;
+      margin-bottom :10px;
+  }
 
 .display-4 {
   font-size: 40px;
@@ -85,7 +117,7 @@ header, main, footer {
 }
 
 .jumbotron {
-  height: 100vh;
+  height: 100%;
   background-image: url(../Images/pokeball\ art.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -106,7 +138,7 @@ header, main, footer {
 }
 
 p {
-  margin-top: 215px;
+  margin-top: 10px;
   margin-bottom: 1rem;
   font-family: 0;
 }
@@ -117,6 +149,7 @@ p {
   position: absolute;
   height: 90px;
   width: 96px;
+  
 }
 
 .badges {
@@ -126,6 +159,25 @@ p {
   height: 103px;
   width: 329px;
   margin-top: 0px;
+}
+
+.bastard-button-search-form {
+  width: 350px;
+  margin: 0px auto;
+  margin-top: -16px;
+}
+
+.collapsible {
+  background-color:rgb(59, 59, 59);
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  color: White;
+  border-radius: 10px;
 }
 
 /* media query */
