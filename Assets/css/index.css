@@ -1,0 +1,190 @@
+.jumbotron {
+    background-image: url("../Images/pokeball\ art.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-color: black;
+    padding-bottom: 125px;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    font-family:0;
+}
+
+
+
+.lead {
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin-top: 210px;
+
+}
+
+header, main, footer {
+    padding-left: 300px;
+  }
+
+      
+  .child-img {
+    margin-top: -237px;
+    margin-left: -214px;
+    position: absolute;
+    height: 162px;
+    width: 149px;
+}
+.child2-img {
+  margin-top: -204px;
+  margin-left: 134px;
+  position: absolute;
+  height: 131px;
+  width: 128px;
+}
+
+/* button, input {
+  overflow: visible;
+  height: 38px;
+  width: 80px;
+  
+}  */
+
+.bastard-button-search-form {
+  width: 350px;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+
+.pokemon-go-button {
+  overflow: visible;
+  height: 38px;
+  width: 80px;
+}
+
+.pokemon-search {
+  width: calc(100% - 80px) !important;
+  margin-right: 0px !important;
+}
+
+.constant-height {
+  height: 105px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.collapsible {
+  background-color:rgb(59, 59, 59);
+  cursor: pointer;
+  padding: 18px;
+  width: 25%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  color: White;
+  border-radius: 10px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(59, 59, 59);  
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+/* phone settings */
+@media only screen 
+  and (max-device-width: 420px) {
+
+    .lead {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-top: 60px;
+      margin-bottom :10px;
+  }
+
+.display-4 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.jumbotron {
+  height: 100%;
+  background-image: url(../Images/pokeball\ art.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-color: black;
+  padding-bottom: 125px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.child2-img {
+  margin-top: -146px;
+  margin-left: 110px;
+  position: absolute;
+  height: 74px;
+  width: 66px;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  font-family: 0;
+}
+
+.child-img {
+  margin-top: -158px;
+  margin-left: -171px;
+  position: absolute;
+  height: 90px;
+  width: 96px;
+  
+}
+
+.badges {
+  margin-top: 100px;
+  vertical-align: middle;
+  border-style: none;
+  height: 103px;
+  width: 329px;
+  margin-top: 0px;
+}
+
+.bastard-button-search-form {
+  width: 350px;
+  margin: 0px auto;
+  margin-top: -16px;
+}
+
+.collapsible {
+  background-color:rgb(59, 59, 59);
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  color: White;
+  border-radius: 10px;
+}
+
+/* media query */
+
+
+}
+
+
+
+

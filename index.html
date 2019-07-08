@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <!-- Nav bar -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="Assets/css/index.css">
+
+  <title>Pokemon API</title>
+</head>
+
+<body>
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pokemon type</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Weather</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+
+  <!-- Jumbo Tron -->
+
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, Pokemon World</h1>
+    <p class="lead">On this site you will find out what Pokemon are Weather Boosted in your region!</p>
+    <hr class="my-4">
+    <p class="lead">Enter in a location to search the weather for your Pokemon.</p>
+
+
+    <div class="parent-img">
+      <img src="Assets/Images/pikachu with umbrella copy.png" class="child-img" />
+    </div>
+
+    <div>
+      <img src="Assets/Images/squirtle2.png" class="child2-img" />
+    </div>
+       
+            <div class="constant-height">
+                <img id="effect" src="Assets/Images/badges.png" class="badges"/>
+              </div>
+
+    <div class="button-search">
+      <form class="form-inline bastard-button-search-form" method="GET">
+        <input class="pokemon-search form-control mr-sm-2" name="query" type="text" placeholder="State, City, or Zip Code">
+        <input class="pokemon-go-button" type="image" src="Assets/Images/pogo button.jpg" alt="Submit feedback">
+      </form>
+
+      <br>
+      <div id="weather-view">
+
+      </div>
+    </div>
+    
+
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  
+  <script src="Assets/javascript/jquery-ui.min.js"></script>
+  <script src="Assets/javascript/app.js"></script>
+  <script text="text/javascript">
+$( function() {
+    // run the currently selected effect
+    function runEffect() {
+      // Run the effect
+      $( "#effect" ).effect( "puff", {}, 500, callback );
+    };
+ 
+    // Callback function to bring a hidden box back
+    function callback() {
+      setTimeout(function() {
+        $( "#effect" ).removeAttr( "style" ).hide().fadeIn();
+      }, 1000 );
+    };
+ 
+    // Set effect from select menu value
+    $( ".pokemon-go-button" ).on( "click", function(event) {
+      event.preventDefault()
+      runEffect();
+    });
+  } );
+  
+
+  </script>
+
+</body>
+
+</html>
