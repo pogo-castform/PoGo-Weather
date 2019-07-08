@@ -47,12 +47,12 @@ function displayWeatherInfo(castform) {
         //---------------------compare method with pokemon weather---------------------
         function compareWeather(weatherAPI) {
             var castform = $(this).attr("data-name");
-            var queryURL = "https://pokemon-go1.p.rapidapi.com/weather_boosts.json";
+            var queryURL = "https://cors-anywhere.herokuapp.com/https://pokemon-go1.p.rapidapi.com/weather_boosts.json";
 
             // Return the elements that get boosted for that weather
             $.ajax({
                 method: "GET",
-                url: "https://pokemon-go1.p.rapidapi.com/weather_boosts.json",
+                url: "https://cors-anywhere.herokuapp.com/https://pokemon-go1.p.rapidapi.com/weather_boosts.json",
                 headers: {
                     "X-RapidAPI-Host": "pokemon-go1.p.rapidapi.com",
                     "X-RapidAPI-Key":
@@ -108,7 +108,7 @@ function displayWeatherInfo(castform) {
                     // Return the elements that get boosted for that weather
                     $.ajax({
                         method: "GET",
-                        url: "https://pokemon-go1.p.rapidapi.com/pokemon_types.json",
+                        url: "https://cors-anywhere.herokuapp.com/https://pokemon-go1.p.rapidapi.com/pokemon_types.json",
                         headers: {
                             "X-RapidAPI-Host": "pokemon-go1.p.rapidapi.com",
                             "X-RapidAPI-Key":
@@ -217,7 +217,7 @@ function displayWeatherInfo(castform) {
                                 console.log(result[i].pokemon_name);
                                 var $pkmn = $("<p>").text(result[i].pokemon_name);
                                 var pkName = result[i].pokemon_name.toLowerCase();
-                                var $pokeSprite = $("<img src=https://img.pokemondb.net/sprites/black-white/normal/" + pkName + ".png>");
+                                var $pokeSprite = $("<img src=//img.pokemondb.net/sprites/black-white/normal/" + pkName + ".png>");
                                 $(".content").append($pkmn);
                                 $pkmn.prepend($pokeSprite);
                             }
