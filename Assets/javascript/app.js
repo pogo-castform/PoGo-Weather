@@ -217,10 +217,10 @@ function displayWeatherInfo(castform) {
                                 console.log(result[i].pokemon_name);
                                 var $pkmn = $("<p>").text(result[i].pokemon_name);
                                 var pkName = result[i].pokemon_name.toLowerCase();
-                                var $pokeSprite = $("<img src=//img.pokemondb.net/sprites/black-white/normal/" + pkName + ".png>");
+                                var $pokeSprite = $("<img src=//play.pokemonshowdown.com/sprites/xyani/" + pkName + ".gif>");
                                 $(".content").append($pkmn);
                                 $pkmn.prepend($pokeSprite);
-                            }
+                            } 
                         }
                     })
                 }
