@@ -1,7 +1,7 @@
 var weather = [];
 
 function displayWeatherInfo(castform) {
-    var queryURL = "http://api.apixu.com/v1/current.json?key=bf20c67b9bae4763b31193656192706&q=" +
+    var queryURL = "//api.apixu.com/v1/current.json?key=bf20c67b9bae4763b31193656192706&q=" +
         castform;
 
     $.ajax({
