@@ -1,6 +1,7 @@
 var weather = [];
+
 function displayWeatherInfo(castform) {
-    var queryURL = "http://api.apixu.com/v1/current.json?key=bf20c67b9bae4763b31193656192706&q=" +
+    var queryURL = "//api.apixu.com/v1/current.json?key=bf20c67b9bae4763b31193656192706&q=" +
         castform;
 
     $.ajax({
@@ -46,12 +47,12 @@ function displayWeatherInfo(castform) {
         //---------------------compare method with pokemon weather---------------------
         function compareWeather(weatherAPI) {
             var castform = $(this).attr("data-name");
-            var queryURL = "https://pokemon-go1.p.rapidapi.com/weather_boosts.json";
+            var queryURL = "https://cors-anywhere.herokuapp.com/https://pokemon-go1.p.rapidapi.com/weather_boosts.json";
 
             // Return the elements that get boosted for that weather
             $.ajax({
                 method: "GET",
-                url: "https://pokemon-go1.p.rapidapi.com/weather_boosts.json",
+                url: "https://cors-anywhere.herokuapp.com/https://pokemon-go1.p.rapidapi.com/weather_boosts.json",
                 headers: {
                     "X-RapidAPI-Host": "pokemon-go1.p.rapidapi.com",
                     "X-RapidAPI-Key":
@@ -67,45 +68,47 @@ function displayWeatherInfo(castform) {
                 var snowPoke = result.Snow;
                 var sunnyPoke = result.Sunny;
                 var windyPoke = result.Wind;
+                var boostButton = "<button class='collapsible'>Boosted Elements: "
+                var endButton = "</button><div class='content'></div>"
 
                 if (weatherAPI.includes("rain") || weatherAPI.includes("drizzle") || weatherAPI.includes("thundery")) {
 
-                    castformDiv.append("Boosted Elements: " + rainPoke);
+                    castformDiv.append(boostButton + rainPoke + endButton);
                 } else if (weatherAPI.includes("Clear")) {
 
-                    castformDiv.append("Boosted Elements: " + clearPoke);
+                    castformDiv.append(boostButton + clearPoke + endButton);
 
                 } else if (weatherAPI.includes("Cloudy") || weatherAPI.includes("Overcast")) {
 
-                    castformDiv.append("Boosted Elements: " + cloudyPoke);
+                    castformDiv.append(boostButton + cloudyPoke + endButton);
 
                 } else if (weatherAPI.includes("Fog") || weatherAPI.includes("Mist")) {
 
-                    castformDiv.append("Boosted Elements: " + fogPoke);
+                    castformDiv.append(boostButton + fogPoke + endButton);
 
                 } else if (weatherAPI === "Partly cloudy") {
 
-                    castformDiv.append("Boosted Elements: " + partlyPoke);
+                    castformDiv.append(boostButton + partlyPoke + endButton);
 
                 } else if (weatherAPI.includes("Snow") || weatherAPI.includes("sleet")
                     || weatherAPI.includes("blizzard") || weatherAPI.includes("pellets")) {
 
-                    castformDiv.append("Boosted Elements: " + snowPoke);
+                    castformDiv.append(boostButton + snowPoke + endButton);
 
                 } else if (weatherAPI.includes("Sunny")) {
 
-                    castformDiv.append("Boosted Elements: " + sunnyPoke);
+                    castformDiv.append(boostButton + sunnyPoke + endButton);
 
                 } else if (weatherAPI.includes("Windy")) {
 
-                    castformDiv.append("Boosted Elements: " + windyPoke);
+                    castformDiv.append(boostButton + windyPoke + endButton);
                 }
                 function showPokemon(weatherAPI) {
 
                     // Return the elements that get boosted for that weather
                     $.ajax({
                         method: "GET",
-                        url: "https://pokemon-go1.p.rapidapi.com/pokemon_types.json",
+                        url: "https://cors-anywhere.herokuapp.com/https://pokemon-go1.p.rapidapi.com/pokemon_types.json",
                         headers: {
                             "X-RapidAPI-Host": "pokemon-go1.p.rapidapi.com",
                             "X-RapidAPI-Key":
@@ -192,14 +195,30 @@ function displayWeatherInfo(castform) {
                             }
                         }
 
+
+                        var coll = document.getElementsByClassName("collapsible");
+                        var i;
+
+                        for (i = 0; i < coll.length; i++) {
+                            coll[i].addEventListener("click", function () {
+                                this.classList.toggle("active");
+                                var content = this.nextElementSibling;
+                                if (content.style.display === "block") {
+                                    content.style.display = "none";
+                                } else {
+                                    content.style.display = "block";
+                                }
+                            });
+                        }
+
                         for (var i = 0; i < 520; i++) {
                             var checkPokeByWeatherType = getWeatherType(weatherAPI);
                             if (checkPokeByWeatherType(result[i].type)) {
                                 console.log(result[i].pokemon_name);
                                 var $pkmn = $("<p>").text(result[i].pokemon_name);
                                 var pkName = result[i].pokemon_name.toLowerCase();
-                                var $pokeSprite = $("<img src=https://img.pokemondb.net/sprites/black-white/normal/" + pkName + ".png>");
-                                castformDiv.append($pkmn);
+                                var $pokeSprite = $("<img src=//img.pokemondb.net/sprites/black-white/normal/" + pkName + ".png>");
+                                $(".content").append($pkmn);
                                 $pkmn.prepend($pokeSprite);
                             }
                         }
@@ -218,5 +237,6 @@ $(".pokemon-go-button").on("click", function (event) {
     event.preventDefault();
     var castform = $(".pokemon-search").val().trim();
     displayWeatherInfo(castform)
+    $("#weather-view").text("");
 
 });

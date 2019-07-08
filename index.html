@@ -42,9 +42,9 @@
 
   <div class="jumbotron">
     <h1 class="display-4">Hello, Pokemon World</h1>
-    <p class="lead">On this site you will find the best pokemon to use for weather boosts!.</p>
+    <p class="lead">On this site you will find out what Pokemon are Weather Boosted in your region!</p>
     <hr class="my-4">
-    <p class="lead">Selecting below will enable you to search the weather for your pokemon</p>
+    <p class="lead">Enter in a location to search the weather for your Pokemon.</p>
 
 
     <div class="parent-img">
@@ -60,8 +60,8 @@
               </div>
 
     <div class="button-search">
-      <form class="form-inline bastard-button-search-form" method="GET" action="{% url 'search' %}">
-        <input class="pokemon-search form-control mr-sm-2" name="query" type="text" placeholder="">
+      <form class="form-inline bastard-button-search-form" method="GET">
+        <input class="pokemon-search form-control mr-sm-2" name="query" type="text" placeholder="State, City, or Zip Code">
         <input class="pokemon-go-button" type="image" src="Assets/Images/pogo button.jpg" alt="Submit feedback">
       </form>
 
@@ -70,7 +70,7 @@
 
       </div>
     </div>
-
+    
 
   </div>
 
